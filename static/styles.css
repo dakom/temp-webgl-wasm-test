@@ -1,0 +1,27 @@
+:root {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px; 
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+#app, #canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#app {
+    background-color: #2a2a2a;
+}
+
+#canvas {
+    touch-action: none;
+}
+
