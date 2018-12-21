@@ -6,4 +6,4 @@ The Rust/Wasm part was built separately to keep things simple for diagnosis here
 
 Its only purpose is to call the WebGL API to create a red square in the top-right quadrant.
 
-## [LIVE DEMO](https://dakom.github.io/temp-webgl-wasm-test)
+## [LIVE DEMO](https://dakom.github.io/temp-webgl-wasm-test/)
