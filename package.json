@@ -1,0 +1,27 @@
+{
+  "name": "webgl-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist/*",
+    "bundle": "npm run clean && cross-env NODE_ENV=production webpack --progress --config webpack.prod.js && cp -R ./site/static ./dist/ && cp ./site/_redirects ./dist/",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --open --config webpack.dev.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "10.12.12",
+    "cross-env": "5.2.0",
+    "fork-ts-checker-webpack-plugin": "0.5.0",
+    "html-webpack-plugin": "3.2.0",
+    "npm-run-all": "4.1.5",
+    "rimraf": "2.6.2",
+    "source-map-loader": "0.2.4",
+    "terser-webpack-plugin": "1.1.0",
+    "ts-loader": "5.3.1",
+    "typescript": "3.2.1",
+    "webpack": "4.27.0",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "3.1.10"
+  }
+}
